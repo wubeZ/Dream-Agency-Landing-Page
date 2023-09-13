@@ -24,7 +24,10 @@ const WordCard = () => {
       variants={card}
       initial="hidden"
       whileInView="show"
-      className="dark:bg-dark-backgroundCard w-full lg:w-[350px] h-96 flex flex-col overflow-hidden rounded-lg shadow-2xl justify-between pt-8 bg-white"
+      viewport={{
+        once: true,
+      }}
+      className="dark:bg-dark-backgroundCard dark:text-dark-textColor-100 w-full lg:w-[350px] h-96 flex flex-col overflow-hidden rounded-lg shadow-2xl justify-between pt-8 bg-white"
     >
       <div className="grid grid-col-2 gap-4 h-80 px-3">
         <div className="col-start-1 col-span-2">

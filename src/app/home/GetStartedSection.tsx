@@ -19,15 +19,15 @@ const variants = {
 
 const GetStartedSection = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col py-12 lg:py-0 gap-12 lg:flex-row justify-center items-center text-[#331b3b] dark:text-dark-textColor-50">
+    <div id="first-section" className="w-full min-h-screen flex flex-col py-12 lg:py-0 gap-12 lg:flex-row justify-center items-center text-[#331b3b] dark:text-dark-textColor-50">
       <motion.div
       variants={variants} 
       initial="hidden"
       animate="show" 
-      className="flex flex-col justify-center pb-12 lg:pb-0 text-5xl lg:text-7xl px-8">
-        <p className=" font-bold">We Help you</p>
-        <p className="font-light">to grow your</p>
-        <p className="w-fit font-light relative after:absolute after:left-1 after:right-1 after:bottom-2 after:h-4 after:-z-10 after:bg-yellow-500 after:dark:bg-sky-800">
+      className="flex flex-col justify-center pb-12 lg:pb-0 text-5xl lg:text-7xl 2xl:text-8xl px-8">
+        <p className=" font-bold dark:text-dark-textColor-100">We Help you</p>
+        <p className="font-light dark:text-dark-textColor-100">to grow your</p>
+        <p className="w-fit font-light dark:text-dark-textColor-100 relative after:absolute after:left-1 after:right-1 after:bottom-2 after:h-4 after:-z-10 after:bg-yellow-500 after:dark:bg-sky-800">
           Buisness
         </p>
         <p className="text-base font-light py-10 w-full">
@@ -41,7 +41,7 @@ const GetStartedSection = () => {
         </button>
       </motion.div>
       <div className="w-full flex relative items-center justify-center">
-        <div className="border-dashed border-2 border-slate-600 rounded-full h-[470px] mt-12 mr-auto w-[470px]"></div>
+        <div className="2xl:hidden border-dashed border-2 border-slate-600 rounded-full h-[470px] mt-12 mr-auto w-[470px]"></div>
         <Image src={vector3} alt="vector3" className="absolute z-10" />
         <Image
           src={twoPeopleImage}

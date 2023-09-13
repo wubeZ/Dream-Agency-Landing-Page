@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -13,9 +14,17 @@ const Header = () => {
     setTheme(colorTheme === "light" ? "light" : "dark");
   };
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    const targetId = e.currentTarget.href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <div className="sticky z-20 h-28 flex justify-between px-8 items-center shadow-md ">
+      <div className="sticky top-0 z-50 bg-white dark:bg-dark-background  h-28 flex justify-between px-8 items-center shadow-md 2xl:text-xl ">
         <div
           className="lg:hidden text-3xl border-2 border-slate-100"
           onClick={() => {
@@ -25,36 +34,52 @@ const Header = () => {
           {openMenu ? <AiOutlineClose /> : <BiMenuAltLeft />}
         </div>
         {openMenu && (
-          <ul className="absolute left-8 px-8 py-4 bg-slate-200 dark:bg-dark-backgroundCard text-xl top-20 flex flex-col rounded-sm gap-2 font-light">
+          <ul className="absolute left-8 px-8 py-4 bg-slate-200 dark:bg-dark-backgroundCard text-xl top-20 flex flex-col rounded-sm gap-8 font-light">
             <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-              Home
+              <Link onClick={handleScroll} href="#first-section">
+                Home
+              </Link>
             </li>
             <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-              About Us
+              <Link onClick={handleScroll} href="#third-section">
+                Services
+              </Link>
             </li>
             <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-              Services
+              <Link onClick={handleScroll} href="#second-section">
+                About Us
+              </Link>
             </li>
             <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-              Contact Us
+              <Link onClick={handleScroll} href="#four-section">
+                Contact Us
+              </Link>
             </li>
           </ul>
         )}
-        <ul className="hidden lg:flex justify-evenly gap-8 font-light">
+        <ul className="hidden lg:flex justify-evenly gap-8 font-light ">
           <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-            Home
+            <Link onClick={handleScroll} href="#first-section">
+              Home
+            </Link>
           </li>
           <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-            About Us
+            <Link onClick={handleScroll} href="#third-section">
+              Services
+            </Link>
           </li>
           <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-            Services
+            <Link onClick={handleScroll} href="#second-section">
+              About Us
+            </Link>
           </li>
           <li className="hover:border-b-2 border-slate-900 hover:dark:border-slate-200 hover:font-semibold">
-            Contact Us
+            <Link onClick={handleScroll} href="#four-section">
+              Contact Us
+            </Link>
           </li>
         </ul>
-        <p className="text-2xl font-medium lg:mr-24">Dream Agency</p>
+        <p className="text-2xl 2xl:text-3xl font-medium ">Dream Agency</p>
 
         <div
           onClick={handleDarkMode}
