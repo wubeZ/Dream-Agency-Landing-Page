@@ -25,6 +25,7 @@ const AboutUsSection = () => {
         <Image src={vector4} alt="vector 4" className="absolute z-10" />
         <Image
           src={ThreePeople}
+          priority={true}
           alt="three people image"
           className="object-contain absolute z-20"
         />

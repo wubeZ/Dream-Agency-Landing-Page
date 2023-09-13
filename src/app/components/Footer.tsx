@@ -19,7 +19,7 @@ const Footer = () => {
                     <p className="">United States</p>
                     <p className="text-sky-500">View large Map</p>
                 </div>
-                <Image src={reactangleImage} alt="Map image" className="absolute" />
+                <Image src={reactangleImage} alt="Map image" priority={true} className="absolute" />
         </div>
     </div>
   )

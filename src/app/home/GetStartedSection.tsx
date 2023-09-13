@@ -45,6 +45,7 @@ const GetStartedSection = () => {
         <Image src={vector3} alt="vector3" className="absolute z-10" />
         <Image
           src={twoPeopleImage}
+          priority={true}
           alt="two People Image"
           className="absolute object-contain z-20"
         />
