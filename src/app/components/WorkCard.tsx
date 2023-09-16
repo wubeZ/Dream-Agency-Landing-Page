@@ -34,11 +34,19 @@ const WordCard = () => {
           <Image
             src={pcImage}
             alt="pc image"
+            blurDataURL="../../../public/1x1-dfe9197f.png"
+            placeholder="blur"
             className="object-fit rounded-lg shadow-lg py-4"
           />
         </div>
         <div className="col-start-3">
-          <Image src={mobileImage} alt="mobile image" className="" />
+          <Image
+            src={mobileImage}
+            blurDataURL="../../../public/1x1-dfe9197f.png"
+            placeholder="blur"
+            alt="mobile image"
+            className=""
+          />
         </div>
       </div>
       <div className="flex justify-between px-4 pb-12">

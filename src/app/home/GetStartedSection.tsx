@@ -46,6 +46,8 @@ const GetStartedSection = () => {
         <Image
           src={twoPeopleImage}
           priority={true}
+          blurDataURL="../../../public/1x1-dfe9197f.png"
+          placeholder="blur"
           alt="two People Image"
           className="absolute object-contain z-20"
         />

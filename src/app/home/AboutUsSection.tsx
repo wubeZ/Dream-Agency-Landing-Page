@@ -26,6 +26,8 @@ const AboutUsSection = () => {
         <Image
           src={ThreePeople}
           priority={true}
+          blurDataURL="../../../public/1x1-dfe9197f.png"
+          placeholder="blur"
           alt="three people image"
           className="object-contain absolute z-20"
         />
