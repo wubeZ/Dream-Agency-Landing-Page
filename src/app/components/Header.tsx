@@ -85,7 +85,7 @@ const Header = () => {
           onClick={handleDarkMode}
           className="h-full flex items-center justify-center"
         >
-          <div className="flex items-center justify-center px-3 py-3 dark:text-dark-textColor-100 hover:bg-dark-background/[0.1] dark:hover:bg-dark-textColor-100/[0.1] transition-all ease-linear rounded-full">
+          <div className="flex items-center justify-center px-3 py-3 dark:text-dark-textColor-100 hover:bg-dark-background/[0.1] dark:hover:bg-dark-textColor-100/[0.1] transition-all ease-linear rounded-full cursor-pointer">
             {colorTheme === "light" ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,13 +121,13 @@ const Header = () => {
         </div>
 
         <ul className="hidden lg:flex justify-evenly gap-8 px-8 text-2xl">
-          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center">
+          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center cursor-pointer">
             <FaFacebook />
           </li>
-          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center">
+          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center cursor-pointer">
             <FaLinkedinIn />
           </li>
-          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center">
+          <li className="rounded-br-2xl rounded-tl-2xl w-10 h-10 border-2 dark:border-slate-400 border-slate-800 grid place-items-center cursor-pointer">
             <FaInstagram />
           </li>
         </ul>

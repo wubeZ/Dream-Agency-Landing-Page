@@ -28,7 +28,7 @@ const GetStartedSection = () => {
         <p className=" font-bold dark:text-dark-textColor-100">We Help you</p>
         <p className="font-light dark:text-dark-textColor-100">to grow your</p>
         <p className="w-fit font-light dark:text-dark-textColor-100 relative after:absolute after:left-1 after:right-1 after:bottom-2 after:h-4 after:-z-10 after:bg-yellow-500 after:dark:bg-sky-800">
-          Buisness
+          Business
         </p>
         <p className="text-base font-light py-10 w-full">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus

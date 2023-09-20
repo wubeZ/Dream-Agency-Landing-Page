@@ -22,7 +22,7 @@ const WhatWeDoSection = () => {
       <p className="text-4xl dark:text-dark-textColor-100 lg:text-5xl font-light">
         For Your{" "}
         <span className="relative dark:text-dark-textColor-100 z-10 after:absolute after:left-1 after:right-1 after:bottom-2 after:h-3 after:-z-10 after:bg-yellow-500 after:dark:bg-sky-800">
-          Buisness
+          Business
         </span>
       </p>
       <motion.div
